@@ -1,0 +1,168 @@
+body {
+	background: #f9f9f9;
+}
+
+h1 {
+	font-size: 34px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+.lb-data .lb-caption {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Lora', serif;
+}
+
+.sideNav {
+	position: fixed;
+	top: 30%;
+	padding-left: 10px;
+	@media(max-width: 991px) {
+		display: none;
+	}
+}
+
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.artCategory {
+	color: #333333;
+	margin-left: 0;
+	transition: margin-left .2s;
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+		color: #333333;
+	}
+}
+
+.artCategory.enlarged {
+	font-size: 28px;
+	margin-left: 10px;
+	transition: margin-left .2s;
+	color: pink;
+	@media(max-width: 535px) {
+		font-size: 22px
+	}
+}
+
+.logo {
+	height: auto;
+	width: 200px;
+	display: block;
+	margin: auto;
+}
+
+.imageGrid {
+	text-align: center;
+	.imageContainer {
+		display: inline-block;
+		max-width: 200px;
+		opacity: 0;
+		transition: all .5s;
+		height: 0;
+		width: 0;
+		margin: 25px;
+		position: absolute;
+		left: -2000%;
+		top: -2000%;
+		&.displayed {
+			display: inline-block;
+			opacity: 1;
+			transition: all .5s;
+			height: auto;
+			width: auto;
+			margin: 10px;
+			visibility: visible;
+			position: static;
+			left: auto;
+			top: auto;
+		}
+	}
+	.solidImage {
+		display: inline-block;
+		width: 200px;
+		height: 266px;
+		background: #666;
+		vertical-align: middle;
+	}
+	.imageLink {
+		height: 100%;
+		width: 100%;
+	}
+	img {
+		height: auto;
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.mobileNav {
+	h1 {
+		text-align: center;
+	}
+}
+
+.mobileNavList {
+	text-align: center;
+	padding-left: 0;
+	li, h1, h3 {
+		display: inline-block;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	li {
+		margin-right: 1em;
+		margin-bottom: 15px;
+	}
+	@media(max-width: 535px) {
+		h3 {
+			font-size: 18px;
+		}
+	}
+}
+
+@media(max-width: 991px) {
+	body {
+		padding-top: 0;
+	}
+	.art {
+		margin-top: 115px;
+	}
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.mobileNavContainer {
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	padding-right: 0;
+	background: #f9f9f9;
+	padding: 20px 0;
+	h1 {
+		margin-top: 0;
+	}
+	@media(max-width: 991px) {
+		display: block;
+	}
+}
+
+.mobileNav .enlarged {
+	text-indent: 0;
+	margin-left: 0;
+}
