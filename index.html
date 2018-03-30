@@ -43,7 +43,9 @@
                   <li><h3><a class="artCategory enlarged" id="portraits">Portraits</a></h3></li>
                   <li><h3><a class="artCategory" id="landscapes">Landscapes</a></h3></li>
                   <li><h3><a class="artCategory" id="stillLifes">Still Lifes</a></h3></li>
-                  <l1><h3><a class="artCategory" target="_blank" href="https://instagram.com/laura.ricci.artist">Instagram</a></h3></l1>
+                  <li><h3><a class="artCategory" target="_blank" href="https://instagram.com/laura.ricci.artist">Instagram</a></h3></li>
+                  <li class="contactIcons"><h3><a class="phoneLink"><span class="glyphicon glyphicon-phone-alt"></span></a><a href="mailto:laura.ricci.artist@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span></a></h3></li>
+                  <li class="phoneNumber hide"><h3><a class="artCategory" target="_blank" href="https://instagram.com/laura.ricci.artist">619-886-9362</a></h3></li>
                 </ul>
               </nav>
             </div>
@@ -56,7 +58,9 @@
                   <li><h3><a class="artCategory enlarged" id="portraits-mobile">Portraits</a></h3></li>
                   <li><h3><a class="artCategory" id="landscapes-mobile">Landscapes</a></h3></li>
                   <li><h3><a class="artCategory" id="stillLifes-mobile">Still Lifes</a></h3></li>
-                  <l1><h3><a class="artCategory" target="_blank" href="https://instagram.com/laura.ricci.artist">Instagram</a></h3></l1>
+                  <li><h3><a class="artCategory" target="_blank" href="https://instagram.com/laura.ricci.artist">Instagram</a></h3></li>
+                  <li class="contactIcons"><h3><a class="phoneLink"><span class="glyphicon glyphicon-phone-alt"></span></a><span class="glyphicon glyphicon-envelope"></span></h3></li>
+                  <li class="phoneNumber hide"><h3><a class="artCategory" target="_blank" href="https://instagram.com/laura.ricci.artist">619-886-9362</a></h3></li>
                 </ul>
               </div>
             </div>
@@ -379,6 +383,9 @@
               $('#portraits, #landscapes, #portraits-mobile, #landscapes-mobile').removeClass("enlarged");
               $('.image-stillLife').addClass("displayed");
               $('.image-portrait, .image-landscape').removeClass("displayed");
+            });
+            $('.phoneLink').click(function() {
+              $('.phoneNumber').toggleClass("hide");
             });
           </script>
 
